@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
 
-import { AboutRoutes } from './about/about.routes';
-import { ExampleRoutes } from './example/example.routes';
+import { LoginRoutes } from './login/login.routes';
+import { SignRoutes } from './sign/sign.routes';
 
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/example',
+        redirectTo: '/sign',
         pathMatch: 'full'
     },
-  ...AboutRoutes,
-  ...ExampleRoutes
+  ...LoginRoutes,
+  ...SignRoutes
 ];

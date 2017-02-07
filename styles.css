@@ -1,15 +1,13 @@
 /* Master Styles */
-h1 {
-  color: #369; 
-  font-size: 250%;
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
 }
-h2, h3 { 
-  color: #444;
-  font-weight: lighter;
+html,body { 
+  	color:#272727;
+  	height: 100%;
 }
-body { 
-  margin: 2em; 
-}
-body, input[text], button { 
-  color: #888; 
+a{
+	color:#272727;
 }

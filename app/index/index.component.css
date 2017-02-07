@@ -3,11 +3,6 @@ header{
 	background: #66B3ff;
 	line-height: 40px;
 }
-header nav{
-	float: right;
-	line-height: 40px;
-	margin-right: 5%;
-}
 header nav ul li{
   display: inline;
 }

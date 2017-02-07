@@ -4,13 +4,13 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { ExampleComponent } from './example/example.component';
+import { LoginComponent } from './login/login.component';
+import { SignComponent } from './sign/sign.component';
 import { routes } from './app.routes';
 
 @NgModule({
     imports:        [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
-    declarations:   [AppComponent, AboutComponent, ExampleComponent],
+    declarations:   [AppComponent, LoginComponent, SignComponent],
     bootstrap:      [AppComponent]
 })
 export class AppModule {}
