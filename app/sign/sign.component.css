@@ -1,0 +1,40 @@
+header{
+	height: 40px;
+	background: #66B3ff;
+	line-height: 40px;
+}
+a{
+	color:rgb(238,39,16);
+	font-size: 1.5rem;
+}
+section{
+	position: fixed;
+	height: 30%;
+	bottom: 40%;
+	left: 10px;
+	right: 10px;
+}
+label{
+	font-weight: 500;
+}
+section form{
+	width: 100%;
+	text-align: center;
+}
+section form div{
+	margin-top: 10%;
+	border-bottom: 1px solid rgba(0,144,243,0.8);
+}
+section form input{
+	line-height: 24px;
+	outline: none;
+}
+section form .sign{
+	border-bottom: none;
+	background-color: #66B3ff;
+	margin-top: 30%;
+	line-height: 32px;
+	border-radius: 5px;
+	margin-left: 45px;
+	margin-right: 45px;
+}

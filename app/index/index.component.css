@@ -1,25 +1,22 @@
-header{
-	height: 40px;
-	background: #66B3ff;
-	line-height: 40px;
+.index-section{
+	height: 100%;
+	background-image: url(app/index/img/timg.jpg);
+	background-size: 100% auto;
 }
-header nav ul li{
-  display: inline;
-}
-header span{
-	float: left;
-}
-footer{
-	height: 40px;
-	background: #66B3ff;
-	line-height: 40px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+.index-section section{
+	padding-top: 100%;
+	width: 100%;
 	text-align: center;
 }
-footer ul li{
-  display: inline;
-
+.index-section section ul li{
+	display: inline-block;
+	background-color: rgb(255,239,42);
+	border: 2px solid rgb(238,39,16);
+	border-radius: 5px;
+	margin: 15px;
+	line-height: 24px;
+}
+a{
+	padding: 10px;
+	color:rgb(1,143,241);
 }
