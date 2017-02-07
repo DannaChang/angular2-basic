@@ -4,7 +4,6 @@ import { IndexRoutes } from './index/index.routes';
 import { UserRoutes } from './user/user.routes';
 import { LoginRoutes } from './login/login.routes';
 import { SignRoutes } from './sign/sign.routes';
-// import { NoticeRoutes} from './user/notice/notice.routes';
 
 export const routes: Routes = [
     {
@@ -16,5 +15,4 @@ export const routes: Routes = [
   ...UserRoutes,
   ...LoginRoutes,
   ...SignRoutes
-  // ...NoticeRoutes
 ];
