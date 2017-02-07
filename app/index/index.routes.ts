@@ -4,7 +4,7 @@ import { IndexComponent } from './index.component';
 
 export const IndexRoutes: Route[] = [
     {
-        path: 'sign',
+        path: 'index',
         component: IndexComponent
     }
 ];

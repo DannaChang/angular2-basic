@@ -1,3 +1,14 @@
-<p>Example page</p>
-
-<p>{{content}}</p>
+<header>
+    <span>domitory home</span>
+</header>
+<section>
+    <router-outlet></router-outlet>
+</section>
+<footer>
+    <ul>
+        <li class="col-md-3"><a routerLink='notice'>通知</a></li>
+        <li class="col-md-3"><a routerLink='domitory'>宿舍</a></li>
+        <li class="col-md-3"><a routerLink='user'>个人</a></li>
+        <li class="col-md-3"><a routerLink='setting'>设置</a></li>
+    </ul>
+</footer>
