@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -18,7 +19,7 @@ import { UserCenterComponent } from './user/user/user.component';
 import { routes } from './app.routes';
 
 @NgModule({
-    imports:        [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
+    imports:        [BrowserModule, HttpModule,FormsModule, RouterModule.forRoot(routes)],
     declarations:   [AppComponent, LoginComponent, SignComponent,IndexComponent,
     UserComponent,NoticeComponent,SettingComponent,DomitoryComponent,UserCenterComponent],
     bootstrap:      [AppComponent]

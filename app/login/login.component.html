@@ -4,13 +4,13 @@
 <section>
 	<form>
 		<div>
-			<input type="text" name="username" class="col-md-8" placeholder="用户名">
+			<input type="text" name="username" class="col-md-8" placeholder="用户名" [(ngModel)]="login.name" >
 		</div>
 		<div>
-			<input type="pasword" name="userpassword" class="col-md-8" placeholder="密码">
+			<input type="pasword" name="userpassword" class="col-md-8" placeholder="密码" [(ngModel)]="login.password">
 		</div>
 		<div class="login">
-			<a>--></a>
+			<a (click)="loginClick()">--></a>
 		</div>
 	</form>
 </section>

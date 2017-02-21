@@ -5,18 +5,18 @@
 	<form>
 		<div>
 			<label class="col-ms-4 pull-left">用户名</label>
-			<input type="text" name="username">
+			<input type="text" name="username" [(ngModel)]="sign.name">
 		</div>
 		<div>
 			<label class="col-ms-4 pull-left">密码</label>
-			<input type="pasword" name="userpassword">
+			<input type="pasword" name="userpassword" [(ngModel)]="sign.password">
 		</div>
 		<div>
 			<label class="col-ms-4 pull-left">重新输入密码</label>
-			<input type="pasword" name="userpassword">
+			<input type="pasword" name="userpassword" [(ngModel)]="sign.repassword">
 		</div>
 		<div class="sign">
-			<a>--></a>
+			<a (click)="signClick()">--></a>
 		</div>
 	</form>
 </section>
