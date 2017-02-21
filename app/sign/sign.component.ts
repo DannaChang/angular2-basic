@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {AppServer} from '../app.service';
+import { Router } from '@angular/router';
 @Component({
     selector: 'sign',
     templateUrl: 'app/sign/sign.component.html',
@@ -12,7 +13,7 @@ export class SignComponent {
     	password:'',
     	repassword:''
     }
-    constructor(private infos:AppServer){}
+    constructor(private infos:AppServer,private _router:Router){}
     signClick(){
     	console.log('sign');
     	if(this.sign.password!=this.sign.repassword){
@@ -26,7 +27,7 @@ export class SignComponent {
             console.log(res);
             if(res){
             	if(res.Recode=="0000"){
-
+            		this._router.navigateByUrl('user');
             	}else{
 
             	}

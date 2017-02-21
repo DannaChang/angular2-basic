@@ -1,6 +1,7 @@
 import { Component,OnInit} from '@angular/core';
 import {AppServer} from "../app.service";
 import {URLSearchParams} from "@angular/http";
+import { Router } from '@angular/router';
 @Component({
     selector: 'login',
     templateUrl: 'app/login/login.component.html',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit{
 	ngOnInit(){
 		
 	}
-	constructor (public infos:AppServer) {
+	constructor (public infos:AppServer,private _router:Router) {
 
 	}
 	public loginClick() {
@@ -28,7 +29,7 @@ export class LoginComponent implements OnInit{
             console.log(res);
             if(res){
             	if(res.Recode=="0000"){
-
+            		this._router.navigateByUrl('user');
             	}else{
 
             	}
