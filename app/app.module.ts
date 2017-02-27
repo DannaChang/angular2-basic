@@ -14,7 +14,7 @@ import { SettingComponent } from './user/setting/setting.component';
 import { DomitoryComponent } from './user/domitory/domitory.component';
 import { UserCenterComponent } from './user/user/user.component';
 import { PersonComponent } from './user/user/person/person.component'
-
+import { NewDomitoryComponent } from './user/domitory/newDomitory/newdomitory.component'
 
 
 import { routes } from './app.routes';
@@ -23,7 +23,7 @@ import { routes } from './app.routes';
     imports:        [BrowserModule, HttpModule,FormsModule, RouterModule.forRoot(routes)],
     declarations:   [AppComponent, LoginComponent, SignComponent,IndexComponent,
     UserComponent,NoticeComponent,SettingComponent,DomitoryComponent,UserCenterComponent,
-    PersonComponent],
+    PersonComponent,NewDomitoryComponent],
     bootstrap:      [AppComponent]
 })
 export class AppModule {}
