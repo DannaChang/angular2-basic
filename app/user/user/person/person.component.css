@@ -1,0 +1,9 @@
+div ul li{
+	line-height: 45px;
+	border:1px solid #cccccc;
+	padding-left: 10%;
+	list-style: none;
+}
+input{
+	background-color: #ffffff;
+}

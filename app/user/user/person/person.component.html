@@ -1,0 +1,15 @@
+<header>
+    <a class="col-xs-3" routerLink="../../user"><--</a>
+    <span class="col-xs-6">个人资料</span>
+    <a class="col-xs-3" (click)="modifyClick()">{{modify}}</a>
+</header>
+<div class="row">
+	<ul class="col-xs-12">
+		<li>用户名：<input type="text" [(ngModel)]="info.user_name" disabled="true"></li>
+		<li>昵称：<input type="text" [(ngModel)]="info.user_nickname" [disabled]="canmodify"></li>
+		<li>积分：<input type="text" [(ngModel)]="info.grade" disabled="true"></li>
+		<li>生日：<input type="text" [(ngModel)]="info.birth" [disabled]="canmodify"></li>
+		<li>头像：<input type="text" [(ngModel)]="info.photo" [disabled]="canmodify"></li>
+		<li>电话：<input type="text" [(ngModel)]="info.phone" [disabled]="canmodify"></li>
+	</ul>
+</div>

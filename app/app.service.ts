@@ -8,13 +8,22 @@ export class AppServer {
     }
     // http.get
     httpGet(url, params) {
-        return this.http.get(url, {search: params}).map(result=>result.json());
+        if(params!==undefined){
+            return this.http.get(url, {search: params}).map(result=>result.json());
+        }else{
+            return this.http.get(url).map(result=>result.json());
+        }
     }
     // http.post
     httpPost(url, params) {
         var headers = new Headers();
         headers.append('Content-Type', 'application/x-www-form-urlencoded');
         return this.http.post(url, params,{headers:headers}).map(result=>result.json());
+    }
+    httpPut(url, params) {
+        var headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        return this.http.put(url, params,{url:url,headers:headers}).map(result=>result.json());
     }
     // jsonp
     // jsonpGet(url, params) {

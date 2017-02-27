@@ -1,0 +1,25 @@
+section{
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	margin: 0px 5px;
+	margin-bottom: 10px;
+	/*max-height: 150px;*/
+}
+section a{
+	vertical-align: middle;
+}
+ul{
+	list-style: none;
+}
+section>p{
+	text-align: center;
+}
+.course>div ul{
+	display: inline-block;
+	padding: 5%;
+	width: 45%;
+	height: 100px;
+}
+.course>div{
+	border-bottom: 1px solid #cccccc;
+}
