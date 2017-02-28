@@ -1,7 +1,7 @@
 <header>
     <a class="col-xs-3" routerLink="../../domitory"><--</a>
     <span class="col-xs-6">新建宿舍</span>
-    <a class="col-xs-3">保存</a>
+    <a class="col-xs-3" (click)="addDomitory()">保存</a>
 </header>
 <div class="row">
 	<ul class="col-xs-12">
@@ -9,7 +9,7 @@
 			<option value="">--</option>
 			<option *ngFor="let item of schools" [value]="item.id">{{item.id}}{{item.name}}</option>
 		</select></li>
-		<li>宿舍楼：<select [(ngModel)]="info.buliding">
+		<li>宿舍楼：<select [(ngModel)]="info.building">
 			<option value="">--</option>
 			<option *ngFor="let item of bulidings" [value]="item">{{item}}</option>
 		</select></li>

@@ -14,10 +14,12 @@ export class NewDomitoryComponent implements OnInit{
 		building:"",
 		domitory:""
 	};
+	public school="";
 	schoolChange(){
 		for (let school of this.schools) {
     		if(school.id==this.info.school){
     			this.bulidings=school.building;
+    			this.school=school.name;
     		}
 		}
 	}
@@ -30,6 +32,24 @@ export class NewDomitoryComponent implements OnInit{
             if(res){
             	if(res.Recode=="0000"){
             		this.schools=res.school;
+            	}else{
+
+            	}
+            }else{
+
+            }
+        })
+	}
+	addDomitory(){
+		console.log("add");
+		var url = "http://localhost:8000/domitory"; 
+		var params="school="+this.school+"&building="+this.info.building+
+		"&domitory="+this.info.domitory+"&userid="+localStorage["userid"];
+		this._info.httpPost(url,params).subscribe(res=> {
+            console.log(res);
+            if(res){
+            	if(res.Recode=="0000"){
+            		
             	}else{
 
             	}
