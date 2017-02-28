@@ -44,7 +44,7 @@ export class NewDomitoryComponent implements OnInit{
 		console.log("add");
 		var url = "http://localhost:8000/domitory"; 
 		var params="school="+this.school+"&building="+this.info.building+
-		"&domitory="+this.info.domitory+"&userid="+localStorage["userid"];
+		"&domitory="+this.info.domitory+"&userid="+localStorage["userid"]+"&username="+localStorage["username"];
 		this._info.httpPost(url,params).subscribe(res=> {
             console.log(res);
             if(res){

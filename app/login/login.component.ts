@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit{
             if(res){
             	if(res.Recode=="0000"){
             		localStorage["userid"]=res.user_id;
+            		localStorage["username"]=res.user_name;
             		this._router.navigateByUrl('user');
             	}else{
 
